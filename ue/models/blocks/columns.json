@@ -44,17 +44,23 @@
       "id": "columns",
       "fields": [
         {
-          "component": "number",
-          "valueType": "number",
-          "name": "columns",
-          "label": "Number of Columns",
-          "value": 2,
-          "validation": {
-            "numberMin": 1,
-            "numberMax": 6
-          }
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
+          "valueType": "string",
+          "options": [
+            { "name": "Image Cover", "value": "image-cover" }
+          ]
         }
       ]
+    },
+    {
+      "id": "columns-row",
+      "fields": []
+    },
+    {
+      "id": "columns-cell",
+      "fields": []
     }
   ],
   "filters": [
