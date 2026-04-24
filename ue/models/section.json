@@ -35,6 +35,7 @@
       "id": "section",
       "components": [
         "accordion",
+        "advanced-tabs",
         "cards",
         "carousel",
         "columns",
@@ -44,11 +45,14 @@
         "hero",
         "image",
         "quote",
+        "schedule",
         "search",
+        "section-metadata",
         "tabs",
         "table",
         "text",
         "video",
+        "youtube",
         "product-recommendations"
       ]
     }

@@ -1,0 +1,29 @@
+{
+  "definitions": [
+    {
+      "title": "Advanced Tabs",
+      "id": "advanced-tabs",
+      "model": "advanced-tabs",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div class=\"advanced-tabs\"><div><div><ul><li>Tab 1</li><li>Tab 2</li></ul></div></div></div>"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "advanced-tabs",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "tabItems",
+          "label": "Tab Names",
+          "valueType": "string",
+          "description": "Add one list item per tab name"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

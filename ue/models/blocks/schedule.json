@@ -1,0 +1,39 @@
+{
+  "definitions": [
+    {
+      "title": "Schedule",
+      "id": "schedule",
+      "model": "schedule",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div class=\"schedule\"><div><div><p><a href=\"\">Schedule JSON URL</a></p></div></div></div>",
+          "fields": [
+            { "name": "url", "selector": "div>div>p>a[href]" },
+            { "name": "urlText", "selector": "div>div>p>a" }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "schedule",
+      "fields": [
+        {
+          "component": "aem-content",
+          "name": "url",
+          "label": "Schedule JSON Path",
+          "valueType": "string",
+          "required": true
+        },
+        {
+          "component": "text",
+          "name": "urlText",
+          "label": "Link Text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

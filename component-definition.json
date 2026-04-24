@@ -60,6 +60,16 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Advanced Tabs",
+          "id": "advanced-tabs",
+          "model": "advanced-tabs",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"advanced-tabs\"><div><div><ul><li>Tab 1</li><li>Tab 2</li></ul></div></div></div>"
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "model": "cards",
@@ -179,6 +189,37 @@
           }
         },
         {
+          "title": "Schedule",
+          "id": "schedule",
+          "model": "schedule",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"schedule\"><div><div><p><a href=\"\">Schedule JSON URL</a></p></div></div></div>",
+              "fields": [
+                {
+                  "name": "url",
+                  "selector": "div>div>p>a[href]"
+                },
+                {
+                  "name": "urlText",
+                  "selector": "div>div>p>a"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Section Metadata",
+          "id": "section-metadata",
+          "model": "section-metadata",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2
+            }
+          }
+        },
+        {
           "title": "Table",
           "id": "table",
           "model": "table",
@@ -192,6 +233,22 @@
                 {
                   "name": "table",
                   "selector": "div>div"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "YouTube",
+          "id": "youtube",
+          "model": "youtube",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"youtube\"><div><div><p><a href=\"\">YouTube URL</a></p></div></div></div>",
+              "fields": [
+                {
+                  "name": "url",
+                  "selector": "div>div>p>a[href]"
                 }
               ]
             }
